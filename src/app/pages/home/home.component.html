@@ -1,0 +1,19 @@
+<div>
+  <app-button (posts)="getData($event)"></app-button>
+</div>
+<app-pie-chart
+  [dataSource]="dataSource"
+  [type]="type"
+  [color]="colorArray"
+></app-pie-chart>
+<app-chart-type-selector
+  [select]="chartTypeArray"
+  (type)="getType($event)"
+  *ngIf="dataSource.length > 1"
+></app-chart-type-selector>
+<br /><br />
+<app-color-picker
+  [color]="colorArray"
+  [dataSource]="dataSource"
+  (newColors)="changeColor($event)"
+></app-color-picker>

@@ -1,0 +1,14 @@
+<div *ngIf="dataSource.length > 1" class="center">
+  <b>Color Picker</b>
+  <ul>
+    <li *ngFor="let item of color; let i = index">
+      <input
+        type="color"
+        value="{{ item }}"
+        *ngIf="dataSource[i]"
+        (change)="colorChange(i, $event.target.value)"
+      />
+      {{ dataSource[i]?.label }}
+    </li>
+  </ul>
+</div>

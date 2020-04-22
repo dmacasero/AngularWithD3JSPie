@@ -1,0 +1,7 @@
+<label for="cars">Choose type of Chart: </label>
+
+<select [(ngModel)]="chartType" (change)="update()">
+  <option *ngFor="let item of select.options" value="{{ item.value }}">
+    {{ item.label }}
+  </option>
+</select>

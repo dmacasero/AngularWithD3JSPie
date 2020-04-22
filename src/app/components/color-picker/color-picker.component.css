@@ -1,0 +1,30 @@
+/* Any media less than 300px screen width will shrink into a 1 column list  */
+
+@media screen and (min-width: 300px) {
+  ul {
+    column-count: 2;
+    column-gap: 0;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  ul {
+    column-count: 2;
+    column-gap: 0;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+  }
+}
+
+li {
+  margin: 5px;
+  display: inline-block;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
