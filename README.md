@@ -1,6 +1,6 @@
 # Nvisnx
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0. This is just a skeleton project that doesn't focus on responsiveness and UI but on the D3.js integration.
 
 ## Development server
 
